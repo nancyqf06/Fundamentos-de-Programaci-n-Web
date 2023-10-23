@@ -1,0 +1,62 @@
+a{
+  text-decoration: none;
+}
+
+header {
+  background-color: #000;
+  height: 112px;
+  padding-top: 8px; 
+}
+
+footer {
+background-color: #000;
+font-size: 20px;
+}
+
+
+
+.img1 {
+  width:80%;
+  
+}
+
+option, .options:hover{
+  color: black;
+}
+
+.options{
+  background: #066cb5;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  display: table;
+  width: 80%;
+  position: relative;
+  border: 1px solid hsla(0,0%);
+  
+}
+
+.fondoGris{
+  background-color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
