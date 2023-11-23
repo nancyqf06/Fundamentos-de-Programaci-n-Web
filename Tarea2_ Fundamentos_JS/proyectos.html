@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="es">
+	<head>
+		<title>Arquitectura</title>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="faviconarq.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="./css/style.css"/>
+        <!-- cargar hoja de estilo de la tira1 -->
+        <link href="./css/tira1.css" rel="stylesheet">
+		
+
+	</head>
+
+	<body class="body-color" id="inicio">
+        <header class="container-fluid fondo-head">
+            <div class="video-head">
+                <video height="550" width="100%" autoplay="" loop="" muted="muted">
+                    <source src="videos/proyectos.mp4" type="video/mp4">
+                </video>
+            
+                <nav id="menu" class="navbar navbar-expand-lg fixed-top animate__animated"> 
+                    <div class="container">
+                        <a class="navbar-brand" href="./sitio.html"> 
+                            <img src="imagenes/ARQUITECTURA LOGO.png" alt="Logotipo arquitectura" class="img-fluid logo1">                                    
+                        </a>                         
+                        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon "></span> 
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">                                       
+                            <ul class="navbar-nav mx-auto mb-2 mb-md-0 text-center">
+                                <li class="nav-item">
+                                    <a data-scroll class="nav-link text-white optmenu live" aria-current="page" href="./sitio.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="./live.html">Vivir</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="./work.html">Trabajar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="./relax.html">Relajarse</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="./contact.html">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="./proyectos.html">Proyectos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+
+
+        <section class="container-fluid pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="container text-center">
+                        <p class="text-dark text-left pb-3 pt-3 p-style">
+                            Explora nuestra colección de planos de arquitectura inspiradores y detallados.
+                            Encuentra tu próxima fuente de inspiración para tus proyectos arquitectónicos.
+                        </p>
+                        
+                        <div class="tab p-5 p-style2">
+                            <!-- funcion que recibe un controlador de eventos (event) y un ID que representa cada pestaña -->
+                            <button class="tablinks" onclick="opciones(event, 'vivienda') ">Plano container de vivienda</button>
+                            <button class="tablinks" onclick="opciones(event, 'trabajo') ">Plano container lugar de Oficina</button>
+                            <button class="tablinks" onclick="opciones(event, 'relajarse') ">Plano container ideal para relajarse</button>
+                        </div>
+                        <!-- contenido de las pestañas -->
+                        <div id="vivienda" class="tabcontent">
+                            <p class="text-center p-style2 text-light">
+                                Nuestro módulo trata de vivir de manera sencilla y hermosa, pero con todo lo que necesitas.
+                                Se trata de la libertad de deudas y de tener la libertad económica para vivir una vida más plena
+                                en lugar de tener una casa más grande. Incluyen una zona de estar, un dormitorio, una cocina y un baño,
+                                y toda la construcción se realiza con madera sostenible. Es posible construir estas viviendas de forma
+                                completamente autónoma y desconectada de la red, generando su propia agua y electricidad. 
+                            </p>
+                            <img src="./imagenes/plano1.png" alt="vivienda" class="img-fluid pb-4">
+                        </div>
+            
+                        <div id="trabajo" class="tabcontent">
+                            <p class="text-center text-light p-style2">
+                            ARQUITECTURA te proporciona una solución móvil de oficina rápida, flexible y práctica. Gracias a varios módulos,
+                            tu espacio de oficina puede construirse completamente según tus necesidades. La configuración de la oficina se
+                            realiza en colaboración con el cliente, y tienen el poder de elegir dónde proporcionar lo necesario.
+                            </p>
+                            <img src="./imagenes/planowork.png" alt="trabajo" class="img-fluid pb-4">
+                        </div>
+            
+                        <div id="relajarse" class="tabcontent">
+                            <p class="text-center text-light p-style2 ">
+                                Nuestro módulo de descanso está diseñado para disfrutar de la vida de manera simple y hermosa, con todas las
+                                comodidades que se necesitan para relajarse al máximo, el cliente escoge las distintas amenidades popsibles 
+                                para las zonas de descanso.
+                            </p>
+                            <img src="./imagenes/plano3.png" alt="relajarse" class="img-fluid pb-4">
+                        </div>
+                    </div>
+                </div>    
+            </div>    
+        </section>
+
+
+        <section class="container">
+            <div class="row p-style2">
+                <div class="col-md-6 col-lg-6 pt-5">
+                    <div class="inputs pt-4 p-style2">
+                        <p class="pb-3">Los siguientes contenedores presentan un precio estimado por marca y cantidad; más sin embargo esto no incluye el diseño arquitéctonico, solo la venta.</p>
+                        <h4>Modelo</h4>
+                        <select name="modelo" id="modelo" class="p-style2">
+                            <option selected default>Seleccione un modelo:</option>
+                            <option id="1">Maersk</option>
+                            <option id="2">TRITON International</option>
+                            <option id="3">CMA CGM</option>
+                            <option id="4">Hapag-Lloyd</option>
+                        </select>
+                        <div class="pt-5"></div>
+                        <h4>Cantidad</h4>
+                        <select name="cantidad" id="cantidad" class="p-style2">
+                            <option selected default>Seleccione la cantidad:</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                        <div class="pt-5">
+                            <input type="button" class="cursor btn btn-dark btn-sm p-2 btn-about-us ms-3" value="Calcular" onclick="calcular()">
+                            <input type="button" class="cursor btn btn-dark btn-sm p-2 btn-about-us ms-3" value="Limpiar" onclick="limpiar()">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 pt-5">
+                    <model-viewer class="model1" src="assets/sami_-_residential_40_container_design.glb" poster="" alt="escenario 3D"
+                        shadow-intensity="1" camera-controls ="auto-rotate">
+                    </model-viewer>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-5">
+            <div class="container pt-5">
+                <!-- tira fotografica -->
+                <h2 class="text-center">Nuestros Patrocinadores</h2>
+                <div id="owl-demo" class="owl-carousel text-center">
+                    <div class="item">
+                        <div class="">
+                            <!-- lazyOwl es una instruccion de JS para agilizar la carga de las fotos -->
+                            <img class="lazyOwl img-fluid" data-src="./imagenes/tira1.jpg" alt="perfil1">
+                        </div>
+                        <div class="">
+                            <h4 class="">Maersk</h4>                       
+                        </div>
+                    </div>
+    
+    
+                    <div class="item">
+                        <div class="">
+                            <img class="lazyOwl img-fluid" data-src="./imagenes/tira2.png" alt="perfil2">
+                        </div>
+                        <div class="">
+                            <h4 class="">CMA CGM</h4>                          
+                        </div>
+                    </div>
+    
+    
+                    <div class="item">
+                        <div class="">
+                            <img class="lazyOwl img-fluid " data-src="imagenes/tira3.jpg" alt="perfil3">
+                        </div>
+                        <div class="">
+                            <h4 class="">TRITON International</h4>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="">
+                            <img class="lazyOwl img-fluid " data-src="imagenes/tira4.jpg" alt="perfil3">
+                        </div>
+                        <div class="">
+                            <h4 class="">Hapag-Lloyd</h4>              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a data-scroll id="flecha" class="goto-top" href="#inicio" title="Ir al inicio" onclick="topFunction()">
+            <img src="./imagenes/arrow.png" class="img-fluid" alt="flecha top">
+        
+        </a>
+
+        <footer class="fondo-footer pt-4 pb-4 text-white text-center">
+            <div>
+                <div class="pb-3">
+                    <img src="./imagenes/ARQUITECTURA LOGO.png" alt="logo arquitectura" class="img-fluid logo2">
+                </div>
+                <div class="icons-arq">  
+			        <a href="https://www.instagram.com/containerhousescr2/" target="blank">
+                         <i class="fab fa-instagram icon-redes" style="color:#fff"></i>                               
+                    </a>
+			        <a href="https://www.facebook.com/containerhousescr2" class="icon-redes pb-3" target="blank">
+                        <i class="fab fa-facebook icon-redes " style="color:#fff"></i>
+                    </a>
+                    <a href="https://walink.co/ac6839" class="whatsapp" target="blank">
+                        <i class="fab fa-whatsapp pe-2 icon-redes" style="color:#fff"></i>
+                    </a>
+                </div>  
+            </div>
+            Derechos reservados 2023
+        </footer>
+        <script src="./js/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL " crossorigin="anonymous "></script>
+        <script src="./js/proyectos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./js/wow.min.js"></script>
+        <script src="./js/tabs.js "></script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script> 
+        <script src="./js/main.js"></script>
+        <!-- LINEA 98 JS TIRA CONFIGURACION VELOCIDAD -->
+        <!-- programacion lista de la tira -->
+        <script src="./js/tira1.js"></script>
+        <!--configuracion de la tira-->
+        <script>
+            $(document).ready(function() {
+                $("#owl-demo").owlCarousel({
+                    /*columnas de fotos */
+                    items: 2,
+                    /*carga rapida de fotos*/
+                    lazyLoad: true,
+                    /*carga automatica de la tira*/
+                    autoPlay: true,
+                    navigation: true,
+                    /*permite ocultar los textos prev y next */
+                    navigationText: ["", ""],
+                    /*permite ir del final al inicio*/
+                    rewindNav: true,
+                    loop: true,
+                    /*valores por defecto. si le ponen los 3 en valor true aparecen los numeros 1 2 3 para navegar*/
+                    scrollPerPage: false,
+                    pagination: false,
+                    paginationNumbers: false,
+                });
+            });
+        </script>
+        <script src="./js/smooth-scroll.min.js"></script>  
+        <script src="./js/elastico.js"></script>       
+</body>
+</html>        
